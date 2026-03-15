@@ -1,0 +1,3952 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cucumber Feature Report</title>
+  <link rel="icon" href="https://www.lambdatest.com/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style type="text/css">
+    .panel-heading {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .pull-right-lg {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.metadata {
+    overflow: auto;
+    letter-spacing: 0.2px;
+    border-color: white;
+    line-height: 1.6;
+    color: #4d4d4d;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+
+.panel-heading a {
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.panel-heading i.glyphicon-chevron-down {
+    display: none;
+}
+
+.panel-heading i.glyphicon-chevron-right {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-down {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-right {
+    display: none;
+}
+
+.generated-on {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.panel-title b {
+    padding-right: 10px;
+}
+
+.panel-heading .label-container {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.panel-heading .label-container label {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.navbar .label-container {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar .label {
+    font-size: 20px;
+}
+
+.navbar .project-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tags {
+    margin-left: 18px;
+    margin-right: 20px;
+    padding-top: 5px;
+    margin-bottom: -4px;
+}
+
+.tag {
+    font-size: 13px;
+    color: #696969;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.chart {
+    padding-bottom: 15px;
+}
+
+div.chart div div svg rect {
+    fill: #f5f5f5;
+}
+
+.arguments {
+    margin-left: 30px;
+    margin-top: 1em;
+    margin-bottom: 15px;
+}
+
+#directory {
+    background-color: #f0f0f0;
+}
+
+.screenshot {
+    padding: 2% 0 2% 0;
+}
+
+.description {
+    background-color: white;
+    border-color: white;
+    line-height: 1.6;
+    color: #6f6f6f;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0.1em 0.5em 1.2em 1.5em
+}
+
+#scenario-description {
+    padding-bottom: 1em;
+    padding-left: 0.2em;
+}
+
+.scrollBar {
+    overflow-x: scroll;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.info {
+    background-color: #fbfbfb;
+}
+
+pre {
+    display: block;
+    padding: 10px;
+    margin-top: 1em;
+    margin-right: 3em;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.step-duration {
+    float: right;
+    color: #BDBDBD;
+}
+
+.footer-div {
+    text-align: right;
+    vertical-align: middle;
+    height: 3.5%;
+    width: 100%;
+}
+
+.footer-container {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 18%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.show-modal:hover {
+    background-color: #f0f0f0;
+}
+
+.footer-link {
+    font-size: 13px;
+    float: right;
+}
+
+.footer-link:hover {
+    color: darkgray;
+}
+
+.steps {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -4px;
+}
+
+.all-features {
+    padding-top: 0.6em;
+}
+
+.keyword {
+    color: #616161;
+}
+
+.stepname {
+    word-wrap: break-word;
+}
+
+.feature-passed {
+    display: block;
+}
+
+.feature-failed{
+    display: block;
+}
+
+.label-saffron{
+    background-color: #ff9933;
+}
+
+.label-retries {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90px;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.label-retries > span:first-child {
+    min-width: 100%;
+}
+
+.ellipsis {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .2s linear;
+    white-space: nowrap;
+    padding:.5rem 1rem;
+}
+.ellipsis:focus, .ellipsis:hover {
+  color:transparent;
+}
+.ellipsis:focus:after,.ellipsis:hover:after{
+    content:attr(data-text);
+    overflow: visible;
+    text-overflow: inherit;
+    background: #fff;
+    position: absolute;
+    left:auto;
+    top:auto;
+    width: auto;
+    max-width: 100%;
+    border: 1px solid #eaebec;
+    padding: 0 .5rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.28);
+    white-space: normal;
+    word-wrap: break-word;
+    display:block;
+    color:black;
+    margin-top:-1.25rem;
+    z-index: 1;
+  }
+
+    /** Issue in google-charts tooltip - https://github.com/google/google-visualization-issues/issues/2162 */
+    .google-visualization-tooltip {
+      pointer-events: none;
+    }
+
+    .count-wrapper {
+      display: flex;
+      gap: 15px;
+    }
+
+    .card {
+      border: 1px solid #f5f5f5;
+      padding: 15px;
+      color: #fff;
+      border-radius: 5px;
+      flex: 1;
+    }
+
+    .generated-on {
+      margin-right: 10px;
+    }
+
+    .card h4 {
+      font-size: 15px;
+    }
+
+    .red-box {
+      background: #d9534e;
+    }
+
+    .blue-box {
+      background: #0074ff;
+    }
+
+    .yellow-box {
+      background: #f0ad4e;
+    }
+
+    .saffron-box {
+      background: #ff9933;
+    }
+
+    .green-box {
+      background: #5cb85b;
+    }
+
+    .gray-box {
+      background: #999;
+    }
+
+    .amb-box {
+      background: #218bcf;
+    }
+
+    .undefined-box {
+      background: #22c2e2;
+    }
+
+    .mb-20px {
+      margin-bottom: 20px;
+    }
+  </style>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        
+          <a class="navbar-brand">
+            Cucumberjs Report
+          </a>
+          <div class="project-name visible-md visible-lg">
+            cucumber-bdd-selenium-automation
+          </div>
+          <div class="label-container">
+            <div class="generated-on">
+              Sun Mar 15 2026 00:38:42 GMT-0400 (Eastern Daylight Time)
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="count-wrapper mb-20px">
+      <div class="card blue-box">
+        <div class="feature-title">
+          <h4>All Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            13
+          </h5>
+        </div>
+      </div>
+      <div class="card green-box">
+        <div class="feature-title">
+          <h4>Passed Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            5
+          </h5>
+        </div>
+      </div>
+      <div class="card red-box">
+        <div class="feature-title">
+          <h4>Failed Scenarios</h2>
+        </div>
+        <div class="feature-value">
+          <h5>
+            8
+          </h5>
+        </div>
+      </div>
+      
+          
+              
+                  
+                      
+    </div>
+    <div class="row">
+      <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
+      <div class="chart col-lg-6 col-md-6" id="piechart_scenarios"></div>
+    </div>
+
+    <div>
+      <p class="text-left">
+        Execution Time: 2m 47s 940ms
+      </p>
+      <p class="text-right">
+        <a id="expand_all">Expand All</a>
+        <span> | </span>
+        <a id="collapse_all">Collapse All</a>
+      </p>
+    </div>
+
+    
+      <div class="panel panel-default">
+        <div class="panel-heading open">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#logOutput">
+              <i class="glyphicon glyphicon-chevron-right"></i>
+              <i class="glyphicon glyphicon-chevron-down"></i>
+              <b>Metadata</b>
+            </a>
+          </h4>
+        </div>
+        <div id="logOutput" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <div class="row">
+              
+                
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                          <strong>
+                            App Version:
+                          </strong>
+                          1.0.0
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                          <strong>
+                            Test Environment:
+                          </strong>
+                          automationexercise.com
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-left>
+                          <strong>
+                            Browser:
+                          </strong>
+                          Chrome
+                        </div>
+                      </div>
+                      
+                  
+                    
+                      <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class=pull-right-lg>
+                          <strong>
+                            Platform:
+                          </strong>
+                          darwin
+                        </div>
+                      </div>
+                      
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+        
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-failed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags"> <span class="tag">@checkout</span>
+                        
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecucumber_bdd_selenium_automationcf7fc6a5-bc26-49a2-9df6-a76043d4baf3">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>Cart and checkout
+                        <span class="label-container">
+
+                        
+
+                        <span>49s 645ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              <span class="label label-danger"
+                                                         title="3 Scenarios Failed">3</span>
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecucumber_bdd_selenium_automationcf7fc6a5-bc26-49a2-9df6-a76043d4baf3" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    <div class="description">  As a shopper<br/>  I want to add products to cart and complete checkout<br/>  So that I can purchase items</div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automationa915bc7d-1bd2-4ac1-9258-a1f94483ab92">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Add product to cart">Add product to cart</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>4s 291ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automationa915bc7d-1bd2-4ac1-9258-a1f94483ab92"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user is on the home page</span>
+                            
+                          
+                              <span class="step-duration">
+                               948ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user adds the first product to cart from home</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 449ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user clicks view cart in the modal</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 369ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the cart should contain at least 1 item</span>
+                            
+                          
+                              <span class="step-duration">
+                               524ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automation8935e19e-a26f-42af-84af-1198da97aa57">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Remove product from cart">Remove product from cart</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>20s 404ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automation8935e19e-a26f-42af-84af-1198da97aa57"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user is on the home page</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 40ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user adds the first product to cart from home</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 498ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user clicks view cart in the modal</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 553ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user removes the first item from the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               760ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the cart should be empty</span>
+                            
+                          
+                              <span class="step-duration">
+                               15s 551ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_15"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_15"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_15">
+                                            <br> AssertionError
+    + expected - actual
+
+    -false
+    +true
+
+    at CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/checkoutSteps.js:26:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)
+    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_15" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>AssertionError
+    + expected - actual
+
+    -false
+    +true
+
+    at CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/checkoutSteps.js:26:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)
+    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automation7872f560-91f8-4e71-b5d1-74b9a5a3f5f7">
+                                    <div>
+
+                                        <div style="padding-right: 70px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Proceed to checkout">Proceed to checkout</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>5s 202ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="1 Steps Skipped">1</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automation7872f560-91f8-4e71-b5d1-74b9a5a3f5f7"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user is on the home page</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 604ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user adds the first product to cart from home</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 440ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user clicks view cart in the modal</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 404ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user proceeds to checkout</span>
+                            
+                          
+                              <span class="step-duration">
+                               746ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the user should be on the checkout page</span>
+                            
+                          
+                              <span class="step-duration">
+                               4ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_25"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_25"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_25">
+                                            <br> AssertionError: expected 'https://automationexercise.com/view_c…' to include 'checkout'
+    at CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/checkoutSteps.js:36:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)
+    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_25" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>AssertionError: expected 'https://automationexercise.com/view_c…' to include 'checkout'
+    at CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/checkoutSteps.js:36:18)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)
+    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the order summary should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automation4d5d2d6f-fe79-4cfb-8c68-3c0e6e2390de">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Validate order summary">Validate order summary</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>19s 747ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automation4d5d2d6f-fe79-4cfb-8c68-3c0e6e2390de"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user has a product in the cart</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 959ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user navigates to checkout</span>
+                            
+                          
+                              <span class="step-duration">
+                               748ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the order summary should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               27ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the delivery address section should be visible</span>
+                            
+                          
+                              <span class="step-duration">
+                               15s 11ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_34"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_34"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_34">
+                                            <br> AssertionError
+    + expected - actual
+
+    -false
+    +true
+
+    at CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/checkoutSteps.js:58:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)
+    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_34" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>AssertionError
+    + expected - actual
+
+    -false
+    +true
+
+    at CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/checkoutSteps.js:58:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)
+    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-failed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags"> <span class="tag">@login</span>
+                        
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecucumber_bdd_selenium_automationc2c3cd94-252a-4a44-b229-25cd77df4575">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>User login
+                        <span class="label-container">
+
+                        
+
+                        <span>1m 4s 447ms</span>
+                                
+              
+              <span class="label label-danger"
+                                                         title="3 Scenarios Failed">3</span>
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecucumber_bdd_selenium_automationc2c3cd94-252a-4a44-b229-25cd77df4575" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    <div class="description">  As a registered user<br/>  I want to log in to my account<br/>  So that I can access my profile and make purchases</div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automation6033f9e4-9064-4ecc-876c-26fbdd58df28">
+                                    <div>
+
+                                        <div style="padding-right: 70px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Successful login">Successful login</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>6s 933ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="1 Steps Skipped">1</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automation6033f9e4-9064-4ecc-876c-26fbdd58df28"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user navigates to the login page</span>
+                            
+                          
+                              <span class="step-duration">
+                               4s 527ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user enters valid credentials</span>
+                            
+                          
+                              <span class="step-duration">
+                               159ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user clicks login</span>
+                            
+                          
+                              <span class="step-duration">
+                               235ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the user should be redirected to the dashboard</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 12ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error1_04"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error1_04"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-1_04">
+                                            <br> Error: Still on login page. Set valid TEST_LOGIN_EMAIL and TEST_LOGIN_PASSWORD (from a registered account on automationexercise.com) to run this scenario.
+    at CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/loginSteps.js:38:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)
+    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-1_04" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>Error: Still on login page. Set valid TEST_LOGIN_EMAIL and TEST_LOGIN_PASSWORD (from a registered account on automationexercise.com) to run this scenario.
+    at CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/loginSteps.js:38:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)
+    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user should see &quot;Logged in as&quot; in the header</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automation787b23ae-0868-46ac-861f-42fd4c8a1013">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Login with invalid credentials">Login with invalid credentials</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>36s 164ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automation787b23ae-0868-46ac-861f-42fd4c8a1013"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user navigates to the login page</span>
+                            
+                          
+                              <span class="step-duration">
+                               4s 176ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user enters email &quot;invalid@example.com&quot; and password &quot;wrongpassword&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               204ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user clicks login</span>
+                            
+                          
+                              <span class="step-duration">
+                               225ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the user should see an error message &quot;Your email or password is incorrect!&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               31s 558ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error1_14"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error1_14"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-1_14">
+                                            <br> Error: Login error message not found
+    at LoginPage.getLoginErrorMessage (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/pages/LoginPage.js:87:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/loginSteps.js:53:19)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-1_14" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>Error: Login error message not found
+    at LoginPage.getLoginErrorMessage (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/pages/LoginPage.js:87:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async CustomWorld.(anonymous) (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/loginSteps.js:53:19)
+    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)
+    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)
+    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44
+    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automationb56994d9-929a-4e67-a1e8-f43115239f65">
+                                    <div>
+
+                                        <div style="padding-right: 70px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Logout functionality">Logout functionality</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>21s 349ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="2 Steps Passed">2</span>
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="1 Steps Skipped">1</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automationb56994d9-929a-4e67-a1e8-f43115239f65"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user navigates to the login page</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 468ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user is logged in</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 840ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user clicks logout</span>
+                            
+                          
+                              <span class="step-duration">
+                               15s 41ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error1_23"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error1_23"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-1_23">
+                                            <br> TimeoutError: Waiting for element to be located By(css selector, a[href="/logout"])
+Wait timed out after 15042ms
+    at /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/selenium-webdriver/lib/webdriver.js:929:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-1_23" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>TimeoutError: Waiting for element to be located By(css selector, a[href="/logout"])
+Wait timed out after 15042ms
+    at /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/selenium-webdriver/lib/webdriver.js:929:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the user should be on the login page</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags"> <span class="tag">@register</span>
+                        
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecucumber_bdd_selenium_automationdfbef9dd-ba3a-442e-a01e-f1a61d3f2a9b">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>User registration
+                        <span class="label-container">
+
+                        
+
+                        <span>13s 968ms</span>
+                                
+              <span class="label label-success"
+                                                         title="3 Scenarios Passed">3</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecucumber_bdd_selenium_automationdfbef9dd-ba3a-442e-a01e-f1a61d3f2a9b" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    <div class="description">  As a new visitor<br/>  I want to register for an account<br/>  So that I can shop and manage my orders</div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automationfc68b398-7803-4d4d-8a59-f188223aa542">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Register new user">Register new user</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>6s 60ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automationfc68b398-7803-4d4d-8a59-f188223aa542"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user navigates to the login page</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 199ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user enters signup name &quot;Test User&quot; and email &quot;testuser@example.com&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               150ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the user clicks the signup button</span>
+                            
+                          
+                              <span class="step-duration">
+                               695ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the user should be redirected to the signup details page</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 14ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automation72495902-6792-48ee-a9f2-e1f186e6e648">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Validate required fields - signup form visible">Validate required fields - signup form visible</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>3s 933ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="2 Steps Passed">2</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automation72495902-6792-48ee-a9f2-e1f186e6e648"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user navigates to the login page</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 901ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the signup form with &quot;New User Signup!&quot; should be visible</span>
+                            
+                          
+                              <span class="step-duration">
+                               31ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automationecd773ec-5d0a-42db-acd7-eb93fdb53ec1">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Validate login form visible">Validate login form visible</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>3s 974ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="2 Steps Passed">2</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automationecd773ec-5d0a-42db-acd7-eb93fdb53ec1"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user navigates to the login page</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 951ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the login form should be visible</span>
+                            
+                          
+                              <span class="step-duration">
+                               22ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-failed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags"> <span class="tag">@search</span>
+                        
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturecucumber_bdd_selenium_automationad69e8ef-169a-4115-8743-96dd7465d773">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>Product search
+                        <span class="label-container">
+
+                        
+
+                        <span>39s 878ms</span>
+                                
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              <span class="label label-danger"
+                                                         title="2 Scenarios Failed">2</span>
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturecucumber_bdd_selenium_automationad69e8ef-169a-4115-8743-96dd7465d773" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    <div class="description">  As a shopper<br/>  I want to search for products<br/>  So that I can find items I am interested in</div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automationaf4be96a-5b9a-4cf8-a010-ab139e2699db">
+                                    <div>
+
+                                        <div style="padding-right: 70px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Search product">Search product</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>16s 524ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="2 Steps Skipped">2</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automationaf4be96a-5b9a-4cf8-a010-ab139e2699db"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user is on the home page</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 471ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user searches for &quot;Blue Top&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               15s 53ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error3_02"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error3_02"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-3_02">
+                                            <br> TimeoutError: Waiting for element to be located By(css selector, *[id="search_product"])
+Wait timed out after 15053ms
+    at /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/selenium-webdriver/lib/webdriver.js:929:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-3_02" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>TimeoutError: Waiting for element to be located By(css selector, *[id="search_product"])
+Wait timed out after 15053ms
+    at /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/selenium-webdriver/lib/webdriver.js:929:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the search results should contain products</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> the search results should include &quot;Blue Top&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automationadebd294-93e1-4605-9777-12690245eb82">
+                                    <div>
+
+                                        <div style="padding-right: 70px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Validate search results">Validate search results</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>16s 17ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="1 Steps Passed">1</span>
+                              
+                              
+                              <span class="label label-warning"
+                                                                title="2 Steps Skipped">2</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automationadebd294-93e1-4605-9777-12690245eb82"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user is on the home page</span>
+                            
+                          
+                              <span class="step-duration">
+                               959ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user searches for &quot;Dress&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               15s 57ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error3_12"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error3_12"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-3_12">
+                                            <br> TimeoutError: Waiting for element to be located By(css selector, *[id="search_product"])
+Wait timed out after 15057ms
+    at /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/selenium-webdriver/lib/webdriver.js:929:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-3_12" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>TimeoutError: Waiting for element to be located By(css selector, *[id="search_product"])
+Wait timed out after 15057ms
+    at /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/selenium-webdriver/lib/webdriver.js:929:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the search results should contain products</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span class="stepname"> at least one product should match the search term &quot;Dress&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocucumber_bdd_selenium_automationc20f326c-e63f-434e-a6ea-481132c800d3">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b><div class="ellipsis" data-text="Search from products page">Search from products page</div>
+                                        </div>
+                                        <div>
+                            <span class="label-container ">
+                                <span>7s 336ms</span>
+                              
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocucumber_bdd_selenium_automationc20f326c-e63f-434e-a6ea-481132c800d3"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span class="stepname"> the user navigates to the products page</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 232ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span class="stepname"> the user searches for &quot;Tshirt&quot; on products page</span>
+                            
+                          
+                              <span class="step-duration">
+                               4s 87ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span class="stepname"> the products page should display search results</span>
+                            
+                          
+                              <span class="step-duration">
+                               16ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+          
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", { packages: ["corechart"] });
+    google.setOnLoadCallback(function () {
+      drawChart({
+        "title": "Features",
+        "failed": 3,
+        "passed": 1,
+        "notdefined": 0,
+        "pending": 0,
+        "skipped": 0,
+        "ambiguous": 0
+                                                        })
+    });
+    google.setOnLoadCallback(function () {
+      drawChart({
+        "title": "Scenarios",
+        "failed": 8,
+        "passed": 5,
+        "rerun": 0,
+        "notdefined": 0,
+        "pending": 0,
+        "skipped": 0,
+        "ambiguous": 0
+                                                        })
+    });
+  </script>
+  <script>
+      $(document).ready(function () {
+  $('.collapse')
+    .on('hide.bs.collapse', function (e) {
+      e.stopPropagation();
+      $(this).prev().removeClass('open');
+    })
+    .on('show.bs.collapse', function (e) {
+      e.stopPropagation();
+      $(this).prev().addClass('open');
+    });
+
+  let $generated = $('.generated-on');
+
+  let timestamp = $generated.text();
+  $generated.text('Report generated ' + moment(timestamp).fromNow());
+  $generated.prop('title', new Date(timestamp).toISOString());
+});
+
+$(document).ready(function () {
+  const $collapsibleItems = $('[data-toggle="collapse"]');
+  const $collapseAllBtn = $('#collapse_all');
+  const $expandAllBtn = $('#expand_all');
+
+  const collapseAll = function () {
+    $collapsibleItems.each(function () {
+      $($(this).attr('href')).collapse('hide');
+    });
+  };
+
+  const expandAll = function () {
+    $collapsibleItems.each(function () {
+      $($(this).attr('href')).collapse('show');
+    });
+  };
+
+  $collapseAllBtn.on('click', collapseAll);
+  $expandAllBtn.on('click', expandAll);
+
+});
+
+function toggle(className) {
+  let x = $(className);
+  if (x.css('display') === 'none') {
+    x.css('display', 'block');
+  } else {
+    x.css('display', 'none');
+  }
+}
+
+      function drawChart(chartData) {
+  let data = google.visualization.arrayToDataTable([
+    ['Task', 'Cucumber Results'],
+    ['Passed', chartData.passed],
+    ['Failed', chartData.failed],
+    ['Pending', chartData.pending],
+    ['Undefined', chartData.notdefined],
+    ['Ambiguous', chartData.ambiguous],
+    ['Skipped', chartData.skipped],
+    ['Re-run', chartData.rerun],
+  ]);
+
+  let total =
+    chartData.passed +
+      chartData.failed +
+      (chartData.pending || 0) +
+      (chartData.notdefined || 0) +
+      (chartData.ambiguous || 0) +
+      (chartData.skipped || 0) ||
+    chartData.rerun ||
+    0;
+  let title;
+
+  if (total === 1) {
+    title = total + ' ' + chartData.title.slice(0, -1);
+  } else {
+    title = total + ' ' + chartData.title;
+  }
+
+  let options = {
+    width: '100%',
+    height: 240,
+    title: title,
+    is3D: true,
+    colors: ['#5cb85c', '#d9534f', '#999', '#5bc0de', '#428bca', '#f0ad4e', '#ff9933'],
+    fontSize: '13',
+    fontName: '"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif',
+    slices: {
+      1: { offset: 0.4 },
+      2: { offset: 0.4 },
+      3: { offset: 0.4 },
+      4: { offset: 0.4 },
+      5: { offset: 0.4 },
+      6: { offset: 0.4 },
+      7: { offset: 0.4 },
+    },
+    titleTextStyle: {
+      fontSize: '13',
+      color: '#5e5e5e',
+    },
+  };
+
+  let chart = new google.visualization.PieChart(document.getElementById('piechart_' + chartData.title.toLowerCase()));
+
+  chart.draw(data, options);
+}
+
+      $('a.toggle').on('click', function (e) {
+  e.preventDefault();
+
+  if (!$(this).hasClass('collapse')) {
+    if ($(this).text() === 'Screenshot -') {
+      // $(this).text('Screenshot +');
+      $(this).next('a.screenshot').find('img').hide();
+    } else if ($(this).text() === 'Screenshot +') {
+      // $(this).text('Screenshot -');
+      $(this).next('a.screenshot').find('img').show();
+    }
+  }
+
+  if ($(this).text().includes(' -')) {
+    $(this).text($(this).text().replace(' -', ' +'));
+  } else {
+    $(this).text($(this).text().replace(' +', ' -'));
+  }
+});
+
+  </script>
+</body>
+
+</html>

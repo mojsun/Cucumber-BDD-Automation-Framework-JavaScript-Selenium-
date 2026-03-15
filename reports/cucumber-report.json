@@ -1,0 +1,1164 @@
+[
+  {
+    "description": "  As a shopper\n  I want to add products to cart and complete checkout\n  So that I can purchase items",
+    "elements": [
+      {
+        "description": "",
+        "id": "cart-and-checkout;add-product-to-cart",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Add product to cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 813653583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1155436167
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the user adds the first product to cart from home",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1486321667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user clicks view cart in the modal",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5001930500,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the cart should contain at least 1 item",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5001543541,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-and-checkout;remove-product-from-cart",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Remove product from cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 529631499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2485687375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the user adds the first product to cart from home",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1505249916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the user clicks view cart in the modal",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5002495374,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the user removes the first item from the cart",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the cart should be empty",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5001685083,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-and-checkout;proceed-to-checkout",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Proceed to checkout",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 724128792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1187788415
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "the user adds the first product to cart from home",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1495056541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the user clicks view cart in the modal",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5002545000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user proceeds to checkout",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the user should be on the checkout page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the order summary should be displayed",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5001205667,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cart-and-checkout;validate-order-summary",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Validate order summary",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 541094457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "the user has a product in the cart",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5001160583,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "the user navigates to checkout",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "the order summary should be displayed",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "the delivery address section should be visible",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5001754583,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@checkout",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cart-and-checkout",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Cart and checkout",
+    "tags": [
+      {
+        "name": "@checkout",
+        "line": 1
+      }
+    ],
+    "uri": "features/checkout.feature"
+  },
+  {
+    "description": "  As a registered user\n  I want to log in to my account\n  So that I can access my profile and make purchases",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login;successful-login",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Successful login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 674720375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to the login page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3163903291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "the user enters valid credentials",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158340375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the user clicks login",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 349815958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user should be redirected to the dashboard",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1006047208,
+              "error_message": "AssertionError: expected 'https://automationexercise.com/login' to not include '/login'\n    at CustomWorld.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/step-definitions/loginSteps.js:37:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async wrapPromiseWithTimeout (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:57:12)\n    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)\n    at async Object.run (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)\n    at async TestCaseRunner.invokeStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:114:16)\n    at async TestCaseRunner.runStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:266:26)\n    at async /Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:197:44\n    at async TestCaseRunner.aroundTestStep (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:139:32)\n    at async TestCaseRunner.runAttempt (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:180:13)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the user should see \"Logged in as\" in the header",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 53655041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;login-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Login with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 594522667
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to the login page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4245060749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the user enters email \"invalid@example.com\" and password \"wrongpassword\"",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165237374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the user clicks login",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 359387166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the user should see an error message \"Your email or password is incorrect!\"",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5000916625,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5001622749,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;logout-functionality",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Logout functionality",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 712103791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to the login page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3450607666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "the user is logged in",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2899918375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "the user clicks logout",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5000847249,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the user should be on the login page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5001663832,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "User login",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
+    "uri": "features/login.feature"
+  },
+  {
+    "description": "  As a new visitor\n  I want to register for an account\n  So that I can shop and manage my orders",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-registration;register-new-user",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Register new user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 579987084
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user navigates to the login page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3843090375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the user enters signup name \"Test User\" and email \"testuser@example.com\"",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153760832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the user clicks the signup button",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 650793750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the user should be redirected to the signup details page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2011186250
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55924791
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-registration;validate-required-fields---signup-form-visible",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Validate required fields - signup form visible",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 607446333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "the user navigates to the login page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4097418332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the signup form with \"New User Signup!\" should be visible",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35830125
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55379082
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-registration;validate-login-form-visible",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Validate login form visible",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 539771042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "the user navigates to the login page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2657676582
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the login form should be visible",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24477540
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55843041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-registration",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "User registration",
+    "tags": [
+      {
+        "name": "@register",
+        "line": 1
+      }
+    ],
+    "uri": "features/register.feature"
+  },
+  {
+    "description": "  As a shopper\n  I want to search for products\n  So that I can find items I am interested in",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-search;search-product",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Search product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 601705707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1140042874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "the user searches for \"Blue Top\"",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5007275791,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the search results should contain products",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the search results should include \"Blue Top\"",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5000689084,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-search;validate-search-results",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Validate search results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 547325791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1961658915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "the user searches for \"Dress\"",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5001332499,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the search results should contain products",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "at least one product should match the search term \"Dress\"",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5001621417,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-search;search-from-products-page",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Search from products page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 679904250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "the user navigates to the products page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4431857707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "the user searches for \"Tshirt\" on products page",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5002557667,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the products page should display search results",
+            "match": {
+              "location": "../Cucumber BDD Automation Framework JavaScript + Selenium/node_modules/@cucumber/cucumber/lib/support_code_library_builder/get_definition_line_and_uri.js:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5001100042,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (/Users/aminforout/Desktop/projects/Testing/cucumber/Cucumber BDD Automation Framework (JavaScript + Selenium)/node_modules/@cucumber/cucumber/lib/time.js:54:20)\n    at listOnTimeout (node:internal/timers:569:17)\n    at process.processTimers (node:internal/timers:512:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@search",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-search",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Product search",
+    "tags": [
+      {
+        "name": "@search",
+        "line": 1
+      }
+    ],
+    "uri": "features/search.feature"
+  }
+]

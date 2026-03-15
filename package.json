@@ -1,0 +1,29 @@
+{
+  "name": "cucumber-bdd-selenium-automation",
+  "version": "1.0.0",
+  "description": "Professional QA automation framework using JavaScript, Selenium WebDriver, and Cucumber BDD for automationexercise.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --config config/cucumber.js",
+    "test:report": "npm run test && node support/generateReport.js",
+    "test:headed": "BROWSER_HEADLESS=false npm run test",
+    "test:chrome": "BROWSER=chrome npm run test",
+    "test:firefox": "BROWSER=firefox npm run test",
+    "report": "node support/generateReport.js"
+  },
+  "keywords": [
+    "selenium",
+    "cucumber",
+    "bdd",
+    "automation",
+    "qa"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.4.0",
+    "chai": "^4.5.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "selenium-webdriver": "^4.27.0"
+  }
+}

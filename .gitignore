@@ -1,0 +1,27 @@
+
+# dependencies
+node_modules/
+
+# reports
+reports/*.json
+reports/*.html
+
+# screenshots
+reports/screenshots/
+
+# environment files
+.env
+
+# OS files
+.DS_Store
+
+# logs
+npm-debug.log
+yarn-error.log
+
+# IDE files
+.idea/
+.vscode/
+
+# test artifacts
+*.log

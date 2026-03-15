@@ -136,19 +136,6 @@ After running `npm run test:report`, open `reports/cucumber-report.html` in a br
 
 ---
 
-## Page Object Model (POM)
-
-Each page (or major flow) has a corresponding class under `pages/`:
-
-- **BasePage:** Common actions: `navigate`, `findElement`, `click`, `sendKeys`, `getText`, explicit waits, scroll-into-view for stability.
-- **Concrete pages (HomePage, LoginPage, etc.):** Locators as getters and methods that perform actions (e.g. `login()`, `searchProduct()`, `addFirstProductToCart()`).
-
-**Benefits:**
-- Single place for locators: UI changes require updates only in page objects.
-- Step definitions stay short and readable (e.g. `await this.loginPage.login(email, password)`).
-- Reuse across scenarios and future features.
-
----
 
 ## BDD Approach
 
@@ -164,7 +151,7 @@ This keeps tests readable for non-technical stakeholders and aligns automation w
 
 - **Headless by default** for CI (e.g. GitHub Actions, Jenkins).
 - **Browser and headless** configurable via env: `BROWSER`, `BROWSER_HEADLESS`.
-- **Structured reports:** JSON for pipelines; HTML for human review and artifacts.
+- **Structured reports:** JSON for pipelines; HTML for review.
 - **Failure screenshots** saved under `reports/screenshots/` and attached in Cucumber report when a scenario fails.
 
 ---

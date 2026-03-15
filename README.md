@@ -73,29 +73,6 @@ project-root
 | **Chai** | Assertions |
 | **cucumber-html-reporter** | HTML test reports |
 
----
-
-## Installation
-
-1. **Prerequisites**
-   - Node.js (v18 or later recommended)
-   - Chrome or Firefox (for browser tests)
-
-2. **Clone and install**
-
-   ```bash
-   cd "Cucumber BDD Automation Framework (JavaScript + Selenium)"
-   npm install
-   ```
-
-3. **Optional: Login tests**
-   - Successful login and logout scenarios expect a valid account on automationexercise.com.
-   - Set env vars or use defaults in `step-definitions/loginSteps.js`:
-     - `TEST_LOGIN_EMAIL`
-     - `TEST_LOGIN_PASSWORD`
-   - Or register a user manually on the site and update the constants.
-
----
 
 ## Running Tests
 
@@ -151,9 +128,11 @@ BROWSER_HEADLESS=false npm run test
 
 After running `npm run test:report`, open `reports/cucumber-report.html` in a browser. You can add a screenshot here for your portfolio:
 
-```
-<!-- Add screenshot: reports/cucumber-report.html -->
-```
+## Test Execution Report
+
+<p align="center">
+  <img src="docs/Cucumber-report-html.png" width="900">
+</p>
 
 ---
 
